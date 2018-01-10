@@ -1,5 +1,5 @@
 // JavaScript
-  console.log('this is loaded');
+  // console.log('this is loaded');
 
   var twitterKeys = {
     consumer_key: 'nOoeM43w5KfCYXkjo0MBunKIn',

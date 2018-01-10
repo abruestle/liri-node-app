@@ -7,8 +7,6 @@
 	var moment = require('moment');
 	var keys = require('./keys.js');
 
-
-
 //Twitter
 	function runTwitter(argument) {
 		var client = new Twitter(keys);
@@ -180,13 +178,13 @@
 	function runAlarm(time) {
 			setTimeout(function() {
 				console.log("It has been "+time+" seconds.");
-				fs.appendFile( "log.txt", "\nIt has been "+ time +" seconds.", null, 2), function(err) {
+				fs.appendFile( "log.txt", "\nIt has been "+ time +" seconds.", function(err) {
 				  // If an error was experienced we say it.
 				  if (err) {
 				    console.log(err);
 				  }
-			  	};
-			}, time * 100);
+			  	});
+			}, time)
 	}
 
 //Current Time
@@ -346,6 +344,7 @@
 			    	runMovies(value);
 			    	break;
 			    case "alarm":
+			    case "set-alarm":
 			    	runAlarm(value);
 			    	break;
 			    case "current-time":

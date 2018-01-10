@@ -2,12 +2,14 @@
 
 -Execute based on commands or using inquirer for in-bash user interface
 
-Non-inquirer commands accepted: "twitter", "tweet", "tweets", "my-tweets", "spotify", "song", "songs", "spotify-this-song", "movie", "movies", "movie-this", "", "do", "do-what-it-says", "current-time", "time", "song/movie", "movie/song", "tweet/movie", "movie/tweet", "tweet/song", "song/tweet", "song/movie/tweet", "movie/song/tweet", "tweet/movie/song", "movie/tweet/song", "tweet/song/movie", "song/tweet/movie", "all"
+Non-inquirer commands accepted: "twitter", "tweet", "tweets", "my-tweets", "spotify", "song", "songs", "spotify-this-song", "movie", "movies", "movie-this", "", "do", "do-what-it-says", "current-time", "time", "alarm", "set-alarm", "song/movie", "movie/song", "tweet/movie", "movie/tweet", "tweet/song", "song/tweet", "song/movie/tweet", "movie/song/tweet", "tweet/movie/song", "movie/tweet/song", "tweet/song/movie", "song/tweet/movie", "all"
 
 do-what-it-says does not apply with all. This is because it is calling other functions and it would be a more confusing output.
 
 If blank, instead it will go to inquirer's prompt.
+____________________________________________________________________________________________
 
+Functions:
 
 Twitter:
 -gives last 20 tweets from twitter thing I made up because I don't twitter at all.
@@ -19,6 +21,7 @@ OMDB:
 -uses OMDB to search for movie name
 
 Set Alarm:
+-Set an alarm in seconds. After the alarm goes, it sends a message to the command line and the log files.
 
 Time:
 -Get the current date and time
